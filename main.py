@@ -1,9 +1,12 @@
+import os
 import logging
+from dotenv import load_dotenv
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters
 from telegram.constants import ParseMode
 from telegram.helpers import escape_markdown
 
+load_dotenv()
 
 # Enable logging
 logging.basicConfig(
