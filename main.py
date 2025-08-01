@@ -28,35 +28,35 @@ PREMIUM_TOOLS = {
         "description": "A sophisticated tool designed for crafting custom Android remote access trojans, It provides users with a framework to build malicious applications capable of gaining unauthorized control over Android devices\n\nأداة متطورة مصممة لإنشاء أحصنة طروادة مخصصة للوصول عن بعد إلى أجهزة أندرويد، وهي توفر للمستخدمين إطار عمل لبناء تطبيقات ضارة قادرة على الحصول على سيطرة غير مصرح بها على أجهزة أندرويد\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/tgmv7of1mm58t9o/ARoid-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "E Checker": {
         "name": "Email Checker",
         "description": "A tool for searching for people's information and their Email accounts using an interactive and easy to use user interface on Windows\n\nأداة للبحث عن معلومات الأشخاص وحسابات البريد الإلكتروني الخاصة بهم باستخدام واجهة مستخدم تفاعلية وسهلة الاستخدام على نظام التشغيل ويندوز\n\n",
         "price": "$1 USD",
         "stars_price": 50,
-        "download_link": "https://www.mediafire.com/file/cmj2fvfhqneeiht/E-Checker-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "EagleSpy": {
         "name": "EagleSpy",
         "description": "A sophisticated remote access trojan designed to coverty monitor and control Android devices, It provides an attacker with extensive capabilities to spy on a target\n\nحصان طروادة متطور للوصول عن بعد مصمم لمراقبة أجهزة أندرويد والتحكم فيها بشكل سري، ويوفر للمهاجم قدرات واسعة للتجسس على الهدف\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/k0t6amqpvm3ppao/EagleSpy-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "G700": {
         "name": "G700",
         "description": "A remote access trojan primarilly known for its extensive capabilties in surveillance, data exfiltration, and remote control over compromised systems It allows attackers to covertly monitor user activity\n\nإن حصان طروادة الوصول عن بعد معروف بقدراته الواسعة في المراقبة وتسلل البيانات والتحكم عن بعد على الأنظمة المخترقة، يسمح للمهاجمين بمراقبة نشاط المستخدم سرا\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/p3em2j73ns6oaq5/G700-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "Keylogger": {
         "name": "Keylogger",
         "description": "A keylogger that logs keystrokes without the user's knowledge, runs in the background, and is undetectable by standard antivirus software, It can send the logged data, including passwords, to the speaker at high speed\n\nبرنامج تسجيل نقرات لوحة المفاتيح دون علم المستخدم، تعمل في الخلفية، وغير قابلة للاكتشاف بواسطة برامج مكافحة الفيروسات القياسية، يمكنها إرسال البيانات المسجلة بما فيها كلمات المرور إلى المتحدم بسرعة كبيرة\n\n",
         "price": "$1 USD",
         "stars_price": 50,
-        "download_link": "https://www.mediafire.com/file/buscn1b4cegrl6f/KeyLogger-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "Pegasus": {
         "name": "Pegasus Spyware",
@@ -70,56 +70,56 @@ PREMIUM_TOOLS = {
         "description": "A Remote Access Trojan, designed to provide unauthorized remote control over an infected computer system, it is a Windows-based threat often used for covert operations and data exfiltration\n\nحصان طروادة للوصول عن بعد (Remote Access Trojan)، مصمم لتوفير تحكم عن بعد غير مصرح به على نظام كمبيوتر مصاب، وهو تهديد يستهدف أنظمة Windows ويُستخدم غالبًا للقيام بعمليات سرية وسرقة البيانات\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/76lg6ds034ncg07/Pekka-Cybaton_AC.zip/file"
+        "download_link": ""
     },
     "Ransomware": {
         "name": "Ransomware Builder",
         "description": "A tool that allows individuals, even with limited technical experience, to create ransomware. This tool comes with an easy-to-use interface and a range of customizable options, such as the encryption algorithm, the content of the ransom note, the cryptocurrency wallet address for payment, and the deadline for payment before the data is permanently deleted\n\nأداة تسمح للأفراد حتى ذوي الخبرة التقنية المحدودة، بإنشاء برامج الفدية، تأتي هذه الأداة مع واجهة سهلة الاستخدام ومجموعة من الخيارات القابلة للتخصيص، مثل خوارزمية التشفير، ومحتوى مذكرة الفدية، وعنوان محفظة العملة المشفرة للدفع، والموعد النهائي للدفع قبل حذف البيانات بشكل دائم\n\n",
         "price": "$1 USD",
         "stars_price": 50,
-        "download_link": "https://www.mediafire.com/file/r1ekmt362d43yh0/Ransomware-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "Roblox": {
         "name": "Roblox Hacking",
         "description": "A software tool to bypass and hack security measures such as Personal Identification Numbers (PINs) and Two Factor Authentication (2FA) on Roblox accounts without the victim's interaction\n\nأداة برمجية لتجاوز واختراق الإجراءات الأمنية مثل أرقام التعريف الشخصية (PINs) والمصادقة الثنائية (2FA) على حسابات Roblox دون تفاعل الضحية\n\n",
         "price": "$5 USD",
         "stars_price": 250,
-        "download_link": "https://www.mediafire.com/file/h9wcw5j040vmjo2/Roblox-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "Spider": {
         "name": "Spider Script",
         "description": "A script to freeze iPhone and Android phones and stop them from working for an unlimited time by phone number through WhatsApp, The user cannot use the phone until it is turned off\n\nسكربت لتجميد هواتف الايفون والاندرويد وايقافها عن العمل لمدة غير محدودة عن طريق رقم الهاتف من خلال الواتس اب ولا يستطيع المستخدم استخدام الهاتف الا بعد اغلاقه\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/x12qwdqchud61rr/Spider-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "SpyNote": {
         "name": "SpyNote",
         "description": "A remote access Trojan malware that primarily targets Android devices, it is considered one of the most widespread malware families targeting Android users\n\nبرنامج ضار من نوع حصان طروادة للوصول عن بعد يستهدف أجهزة أندرويد بشكل أساسي، ويعتبر أحد أكثر عائلات البرامج الضارة انتشارًا التي تستهدف مستخدمي أندرويد\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/r68es8bg0iif7b1/SpyNote-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "Spyroid": {
         "name": "SpyDroid RAT",
         "description": "An Android application that allows users to monitor various activities on a target device, It can track call logs, SMS messages, location data, installed applications, and more, often operating discreetly in the background, It is primarily marketed for parental control or employee monitoring\n\nسبايدرويد هو تطبيق أندرويد يسمح للمستخدمين بمراقبة الأنشطة المختلفة على جهاز مستهدف، يمكنه تتبع سجلات المكالمات، ورسائل SMS، وبيانات الموقع، والتطبيقات المثبتة، والمزيد، وغالبًا ما يعمل بشكل سري في الخلفية، يتم تسويقه بشكل أساسي لأغراض الرقابة الأبوية أو مراقبة الموظفين\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/bvm6ilofz6w59k4/Spyroid-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "XWorm": {
         "name": "XWorm RAT",
         "description": "A dangerous type of malware, primarily functioning as a Remote Access Trojan, It allows cybercriminals to gain unauthorized control over a victim's computer from a distance, XWorm is known for its wide range of capabilities, including stealing sensitive data like passwords and cryptocurrency information, logging keystrokes, and even deploying additional malicious payloads like ransomware\n\nنوع خطير من البرامج الضارة، يعمل بشكل أساسي كـ حصان طروادة للوصول عن بعد. يتيح للمجرمين السيبرانيين السيطرة غير المصرح بها على جهاز الكمبيوتر الخاص بالضحية عن بعد، يشتهر XWorm بمجموعة واسعة من الإمكانيات، بما في ذلك سرقة البيانات الحساسة مثل كلمات المرور ومعلومات العملات المشفرة، وتسجيل ضغطات المفاتيح keystrokes، وحتى نشر حمولات خبيثة إضافية مثل برامج الفدية ransomware\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/nbzuu9b20g42f1m/XWorm-Cybaron_AC.zip/file"
+        "download_link": ""
     },
     "ZeroTrace": {
         "name": "ZeroTrace Stealer",
         "description": "A malware designed to gather sensitive information from systems, It boasts capabilities such as harvesting credentials, financial data, and personal files, often employing sophisticated evasion techniques to avoid detection by security software\n\nبرنامج ضار مصمم لجمع معلومات حساسة من الأنظمة، ويتميز بقدرات مثل حصاد بيانات الاعتماد والبيانات المالية والملفات الشخصية، وغالبًا ما يستخدم تقنيات التهرب المتطورة لتجنب اكتشافه بواسطة برامج الأمان\n\n",
         "price": "$2 USD",
         "stars_price": 100,
-        "download_link": "https://www.mediafire.com/file/6sfpiv4o96gve0h/ZeroTrace-Cybaron_AC.zip/file"
+        "download_link": ""
     },
 }
 
@@ -128,22 +128,22 @@ FREE_TOOLS = {
     "CraxsRAT": {
         "name": "CraxsRAT",
         "description": "A powerful remote administration tool that offers extensive capabilities for controlling and monitoring Android devices, It allows users to gain unauthorized access to a target device\n\nأداة إدارة عن بعد قوية توفر إمكانيات واسعة للتحكم في أجهزة أندرويد ومراقبتها، فهي تسمح للمستخدمين بالوصول غير المصرح به إلى جهاز مستهدف\n\n",
-        "download_link": "https://www.mediafire.com/file/azt6heoynnm2k3b/CraxsRAT-Cybaron_AC.zip/file",
+        "download_link": "",
     },
     "CypherRAT": {
         "name": "CypherRAT",
         "description": "A stealthy remote access trojan specificallty designed to compromise and control Android devices with a focus on data exfilration and covert surveillence\n\nحصان طروادة خفي للوصول عن بعد مصمم خصيصًا لاختراق أجهزة أندرويد والتحكم فيها مع التركيز على استخراج البيانات والمراقبة السرية\n\n",
-        "download_link": "https://www.mediafire.com/file/o02wfdu7zi0nfer/CypherRAT-Cybaron_AC.zip/file",
+        "download_link": "",
     },
     "SilverRAT": {
         "name": "SilverRAT",
         "description": "A potent remote access trojan specifcally designed to gain comprehensive control over Android devices, enabling attackers to perform extensive surveillence and data exfiltration\n\nحصان طروادة قوي للوصول عن بعد مصمم خصيصًا للحصول على سيطرة شاملة على أجهزة أندرويد، مما يتيح للمهاجمين إجراء مراقبة مكثفة واستخراج البيانات\n\n",
-        "download_link": "https://www.mediafire.com/file/conl1tir8nxamv1/SilverRAT-Cybaron_AC.zip/file",
+        "download_link": "",
     },
     "WiFisploit": {
         "name": "WiFisploit",
         "description": "A tool designed to scan and attack WiFi networks using variety of powerful and effective attacks, It contains numerous commands and modules designed to work against all types of networks\n\nأداة مصممة لفحص ومهاجمة شبكات WiFi باستخدام مجموعة متنوعة من الهجمات القوية والفعالة، وتحتوي على العديد من الأوامر والوحدات المصممة للعمل ضد جميع أنواع الشبكات\n\n",
-        "download_link": "https://github.com/cybro-ac/WiFisploit.git",
+        "download_link": "",
     }
 }
 
@@ -297,7 +297,7 @@ async def request_tool_stars(update: Update, context) -> None:
                 title=title,
                 description=description,
                 payload=payload,
-                provider_token="5775769170:LIVE:TG_Utb4pqteiv8EDLUh6S5qdXoA",
+                provider_token="",
                 currency="XTR",
                 prices=[LabeledPrice(label=f"{tool_info['name']} ({price_in_stars} Stars)", amount=price_in_stars)]
             )
