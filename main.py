@@ -303,4 +303,94 @@ async def request_tool_stars(update: Update, context) -> None:
             )
 
         except Exception as e:
-            logge
+            logger.error(f"Failed to send stars invoice: {e}")
+            await query.edit_message_text(
+                "🔴 C • Payment Error\n\nAn error occurred while initiating Stars payment, Please ensure your Telegram app is updated and try again\n\nحدث خطأ أثناء بدء الدفع بالنجوم، يرجى التأكد من تحديث تطبيق تيليجرام والمحاولة مرة أخرى",
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("« Back To Main Menu", callback_data="back_to_start_menu")]])
+            )
+    else:
+        await query.edit_message_text("Error: Tool not found or Stars price not set", parse_mode=ParseMode.MARKDOWN_V2)
+
+
+async def pre_checkout_callback(update: Update, context) -> None:
+    query = update.pre_checkout_query
+    if query.invoice_payload.startswith("stars_payment_"):
+        await query.answer(ok=True)
+    else:
+        await query.answer(ok=False, error_message="Something went wrong with your payment")
+
+
+async def successful_payment_callback(update: Update, context) -> None:
+    user = update.message.from_user
+    payload_parts = update.message.successful_payment.invoice_payload.split('_')
+    tool_id = payload_parts[2]
+    tool_info = PREMIUM_TOOLS.get(tool_id)
+
+    if tool_info:
+        await update.message.reply_text(
+            f"🟢 *C • Payment Successful*\n\n"
+            f"Thank you for your purchase of *{escape_markdown(tool_info['name'], version=2)}*\\!\n\n"
+            f"Here is your download link:\n{escape_markdown(tool_info['download_link'], version=2)}\n\n"
+            f"Enjoy your new tool\n\n",
+            parse_mode=ParseMode.MARKDOWN_V2,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("« Back To Main Menu", callback_data="back_to_start_menu")]])
+        )
+
+        escaped_full_name = escape_markdown(user.full_name, version=2)
+        escaped_username = escape_markdown(user.username or 'N/A', version=2)
+        escaped_tool_name = escape_markdown(tool_info['name'], version=2)
+
+        admin_notification_message = (
+            f"🟢 *C • Payment Confirmed\\!*\n\n"
+            f"Name: {escaped_full_name}\n"
+            f"User: @{escaped_username}\n"
+            f"ID: `{user.id}`\n"
+            f"Tool: *{escaped_tool_name}*\n"
+            f"Payment Method: *Telegram Stars*\n"
+            f"Amount: *{update.message.successful_payment.total_amount} Stars*"
+        )
+        try:
+            await context.bot.send_message(
+                chat_id=ADMIN_TELEGRAM_ID,
+                text=admin_notification_message,
+                parse_mode=ParseMode.MARKDOWN_V2
+            )
+        except Exception as e:
+            logger.error(f"Failed to send successful payment notification to admin: {e}")
+    else:
+        logger.error(f"Successful payment for unknown tool_id: {tool_id}")
+        await update.message.reply_text(
+            "🔴 C • Error\n\nPayment confirmed, but an issue occurred delivering the tool, Please contact support\n\nحدث خطأ في تسليم الأداة بعد الدفع، يرجى الاتصال بالدعم",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("« Back To Main Menu", callback_data="back_to_start_menu")]])
+        )
+
+# --- Main function to run the bot ---
+def main() -> None:
+    application = Application.builder().token(BOT_TOKEN).build()
+
+    # Main menu handlers
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CallbackQueryHandler(start, pattern="^back_to_start_menu$"))
+    
+    # Category handlers
+    application.add_handler(CallbackQueryHandler(show_free_tools, pattern="^show_free_tools$"))
+    application.add_handler(CallbackQueryHandler(show_premium_tools, pattern="^show_premium_tools$"))
+
+    # Free tools handlers
+    application.add_handler(CallbackQueryHandler(show_free_tool_details, pattern=r"^show_free_tool_"))
+    application.add_handler(CallbackQueryHandler(get_free_tool, pattern=r"^get_free_tool_"))
+
+    # Premium tools handlers
+    application.add_handler(CallbackQueryHandler(show_premium_tool_details, pattern=r"^show_premium_tool_"))
+    application.add_handler(CallbackQueryHandler(request_tool_stars, pattern=r"^request_tool_stars_"))
+    
+    # Payment handlers
+    application.add_handler(PreCheckoutQueryHandler(pre_checkout_callback))
+    application.add_handler(MessageHandler(filters.SUCCESSFUL_PAYMENT, successful_payment_callback))
+
+    logger.info("Bot started polling...")
+    application.run_polling(allowed_updates=Update.ALL_TYPES)
+
+if __name__ == "__main__":
+    main()
+
